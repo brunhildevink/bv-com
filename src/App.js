@@ -20,15 +20,22 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <Col xs={3}>
-              <div className="social-links">
-                <a href="https://www.linkedin.com/in/brunhilde-vink/">LinkedIn</a>
-                <a href="https://github.com/brunhildevink">GitHub</a>
-              </div>
+            <Col xs={3} className="links-container">
+                <Col>
+                  <img
+                    src="https://images.unsplash.com/photo-1553476590-695189b18600?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+                    className="avatar"
+                  />
+                </Col>
+                <Col className="flex-end">
+                  <a href="https://www.linkedin.com/in/brunhilde-vink/">LinkedIn</a>
+                  <a href="https://github.com/brunhildevink">GitHub</a>
+                  <a href="https://github.com/brunhildevink">Download CV</a>
+                </Col>
             </Col>
 
             <Col>
-              <p>Est tempor enim amet commodo consequat id non ut esse ut elit elit. Dolore veniam ut amet laborum. Dolore consequat mollit ex veniam culpa qui. Quis id in non duis do magna aliquip officia non dolor exercitation Lorem nulla id. Deserunt laborum qui non quis est. Irure dolor Lorem laborum amet magna occaecat anim enim eu dolore sunt.</p>
+              <p>I am currently open for new opportunities! Before working as a web developer, I was working as a (motion graphics) designer.</p>
 
               <p>Aute consequat mollit in dolore eiusmod quis. Exercitation consectetur aliquip mollit dolor voluptate ut nisi deserunt cillum adipisicing amet incididunt velit. Pariatur est proident labore incididunt eiusmod officia culpa nisi quis. Deserunt ex excepteur ex laboris sunt occaecat aliquip dolore. Sunt commodo esse sint aute. Eiusmod anim pariatur reprehenderit ullamco do cillum.</p>
 

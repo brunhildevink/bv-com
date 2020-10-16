@@ -2,6 +2,25 @@
   a {
     display: block;
   }
+
+  .avatar {
+    border-radius: 50%;
+    &:after {
+      content: '';
+    }
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    .flex-end {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
 }
 
 .App-header {
