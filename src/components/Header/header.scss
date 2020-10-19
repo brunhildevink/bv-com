@@ -9,7 +9,15 @@
     }
 
     .intro-header {
-        margin-top: 25vh;
+        margin-top: 48px;
+
+        @media (max-width: 767.98px) {
+            font-size: 46px;
+        }
+        
+        @media (min-width: 768px) {
+            margin-top: 25vh;
+        }
     }
 
     &:before {
@@ -20,7 +28,12 @@
         width: 100vw;
         height: 80vh;
         background: #fbf4f9;
-        border-bottom-left-radius: 40%;
-        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        @media (min-width: 768px) {
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
     }
 }
