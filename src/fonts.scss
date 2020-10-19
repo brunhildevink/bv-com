@@ -3,14 +3,25 @@
     src: local('Playfair'), url(/fonts/playfair.tff) format('tff');
 }
 
+@font-face {
+    font-family: 'merriweather';
+    src: local('merriweather'), url(/fonts/merriweather.tff) format('tff');
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
     color: #393b44;
 }
 
+.intro-header {
+    font-family: 'merriweather', helvetica, sans-serif normal;
+    letter-spacing: -4px;
+    font-size: 80px;
+}
+
 h1 {
     font-size: 104px;
-    font-family: Playfair;
 }
+
 h2 {
     font-size: 60px;
 }
@@ -18,10 +29,10 @@ h3 {
     font-size: 44px;
 }
 h4 {
-    font-size: 40px;
+    font-size: 36px;
 }
 p, a {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 p {

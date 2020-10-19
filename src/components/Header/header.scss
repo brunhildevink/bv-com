@@ -1,6 +1,25 @@
 .header {
+    position: relative;
     background-color: #fff;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+
+    p, a {
+        font-size: 28px;
+    }
+
+    .intro-header {
+        margin-top: 25vh;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 80vh;
+        background: #fbf4f9;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+    }
 }

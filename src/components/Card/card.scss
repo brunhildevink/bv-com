@@ -1,11 +1,22 @@
-.card {
-    width: 400px;
-    height: 200px;
-    background-color: #ffe2e2;
+.skill-card {
+    padding: 30px 40px;
+    margin: 15px 0;
+    border-radius: 30px;
+    border: 1px solid #e8e8e8;
 
-    h3, p {
+    &.highlight {
+        background-color: #f1f8f1;
+        border: none;
+    }
+
+    h4, p {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        cursor: default;
+    }
+
+    h4 {
+        font-weight: 700;
     }
 }
