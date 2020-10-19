@@ -3,13 +3,6 @@
     display: block;
   }
 
-  .avatar {
-    border-radius: 50%;
-    &:after {
-      content: '';
-    }
-  }
-
   .links-container {
     display: flex;
     flex-direction: column;
@@ -21,11 +14,4 @@
       justify-content: flex-end;
     }
   }
-}
-
-.App-header {
-  background-color: #222831;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
