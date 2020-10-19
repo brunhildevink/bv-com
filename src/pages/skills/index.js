@@ -10,37 +10,49 @@ function Skills() {
     const languages = [
         {
             title: "HTML/CSS",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate.",
+            text: "Advanced",
         },
         {
             title: "Javascript ES6",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Advanced"
         },
         {
             title: "PHP",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Medior"
+        },
+        {
+            title: "Python",
+            text: "Beginner"
+        },
+        {
+            title: "Node",
+            text: "Beginner"
+        },
+        {
+            title: "Java",
+            text: "Beginner"
         }
     ]
 
     const frameworks = [
         {
             title: "React",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Advanced"
         },
         {
             title: "Vue",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Medior"
         },
     ]
 
     const test = [
         {
             title: "Jest",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Medior"
         },
         {
             title: "Jasmine",
-            text: "Exercitation non eiusmod id reprehenderit deserunt nulla nostrud do duis non veniam eu ea. Exercitation duis cillum eiusmod nulla incididunt culpa qui do proident laboris. Proident ipsum commodo tempor eiusmod duis consequat sunt cupidatat consequat mollit elit elit. Voluptate laboris culpa nulla amet elit ad voluptate."
+            text: "Beginner"
         },
     ]
 
@@ -61,8 +73,10 @@ function Skills() {
     }
 
     return (
-        <section className="skills">
+        <section className="skills" id="skills">
             <Container>
+
+                <h2 className="intro-header">Skills</h2>
 
                 <div className="skill-section">
                     <h3>Languages</h3>

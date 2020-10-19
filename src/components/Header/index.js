@@ -1,8 +1,6 @@
 import React from 'react';
 import './header.scss';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 
 // components
 import Button from '../../components/Button'
@@ -13,14 +11,13 @@ function Header() {
             <Container>
                 <Row>
                     <Col>
-                    <h1 className="intro-header">
-                        Hello, my name's <br />
-                        Brunhilde. <br />
-                        I'm a web developer.
-                    </h1>
-                    <Button primary text="contact" />
-                    <Button secondary text="download CV" />
-                    {/* <p>I am currently open for new opportunities! Before working as a web developer, I was working as a (motion graphics) designer.</p> */}
+                        <h1 className="intro-header">
+                            Hello, my name's <br />
+                            Brunhilde. <br />
+                            I'm a web developer.
+                        </h1>
+                        <Button primary anchor="#contact" text="contact" />
+                        <Button secondary download="../../../public/CV-brunhilde.pdf" text="download CV" />
                     </Col>
                 </Row>
                 <Button scroll />

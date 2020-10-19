@@ -1,0 +1,46 @@
+.contact {
+    min-height: 400px;
+    position: relative;
+
+    a {
+        display: block;
+
+        &:hover {
+            color: #cc0e74;
+        }  
+    }
+
+    .contact-row {
+        padding-top: 80px;
+    }
+
+    .contact-btn-row {
+        align-items: flex-end;
+
+        a {
+            text-decoration: none;
+        }
+
+        svg {
+            margin: 0 20px 0 0;
+        }
+
+        .button {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        background: #fbf4f9;
+        border-top-left-radius: 40%;
+        border-top-right-radius: 40%;
+    }
+}

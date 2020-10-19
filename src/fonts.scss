@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .intro-header {
     font-family: 'merriweather', helvetica, sans-serif normal;
-    letter-spacing: -4px;
-    font-size: 80px;
+    letter-spacing: -.05em;
+    margin-bottom: .5em;
 }
 
 h1 {
-    font-size: 104px;
+    font-size: 80px;
 }
 
 h2 {
@@ -37,29 +37,4 @@ p, a {
 
 p {
     font-weight: 300;
-}
-
-a {
-    position: relative;
-
-    &:hover {
-        text-decoration: none;
-        color: #f2a365;
-
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            animation: line .3s ease-in-out;
-            animation-fill-mode: forwards;
-            height: 2px;
-            width: auto;
-            background-color: #f2a365;
-        }
-    }
-}
-
-@keyframes line {
-    from {width: 0;}
-    to {width: 30px;}
 }
