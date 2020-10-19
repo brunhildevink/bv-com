@@ -1,5 +1,11 @@
 .card {
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     background-color: #ffe2e2;
+
+    h3, p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
