@@ -12,17 +12,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Container>
-        <Row>
-          <Col lg={6} sm={12}>
-            <About />
-          </Col>
-          <Col lg={6} sm={12}>
-            <Skills />
-          </Col>
-        </Row>
+      <Container fluid className="about-background">
+        <Container>
+          <Row>
+            <Col lg={6} sm={12}>
+              <About />
+            </Col>
+            <Col lg={6} sm={12}>
+              <Contact />
+            </Col>
+          </Row>
+        </Container>
       </Container>
-      <Contact />
     </div>
   );
 }

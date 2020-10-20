@@ -53,7 +53,6 @@ function Skills() {
 
     return (
         <section className="skills" id="skills">
-            <Container>
 
                 {/* <h2 className="intro-header">Skills</h2> */}
 
@@ -78,7 +77,6 @@ function Skills() {
                     </Row>
                 </div>
 
-            </Container>
         </section>
     )
 }

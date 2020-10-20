@@ -1,13 +1,14 @@
 .skill-card {
-    padding: 20px 0;
+    padding: 14px 0;
     margin: 15px 0;
-    border-radius: 8px;
-    border: 2px solid #cc0e74;
+    border-radius: 50px;
+    border: 1px solid #cc0e74;
     display: flex;
     justify-content: center;
 
     h6 {
         cursor: default;
         margin-bottom: unset;
+        font-size: 20px;
     }
 }

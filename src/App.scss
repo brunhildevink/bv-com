@@ -10,4 +10,23 @@
       justify-content: flex-end;
     }
   }
+
+  .about-background {
+    position: relative;
+
+    @media (min-width: 994px) {
+      &:before {
+        content: '';
+        display: block;
+        background: #fff;
+        position: absolute;
+        right: -30px;
+        top: -50px;
+        min-width: calc(50vw + 60px);
+        min-height: calc(100% + 100px);
+        border-radius: 50px;
+        box-shadow: 0px 3px 23px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 }
