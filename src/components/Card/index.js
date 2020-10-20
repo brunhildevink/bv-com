@@ -1,11 +1,10 @@
 import React from 'react';
 import './card.scss';
 
-function Card({title, text, highlight}) {
+function Card({title}) {
   return (
-    <div className={`skill-card ${highlight ? "highlight" : ""}`}>
-      <h4 className="intro-header">{title}</h4>
-      <p>{text}</p>
+    <div className="skill-card">
+      <h6 className="intro-header">{title}</h6>
     </div>
   );
 }

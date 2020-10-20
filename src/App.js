@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-
-// Components
-import Header from './components/Header'
+import { Container, Row, Col } from 'react-bootstrap';
 
 // Pages
+import Header from './components/Header'
+import About from './pages/About'
 import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 
@@ -12,7 +12,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Skills />
+      <Container>
+        <Row>
+          <Col lg={6} sm={12}>
+            <About />
+          </Col>
+          <Col lg={6} sm={12}>
+            <Skills />
+          </Col>
+        </Row>
+      </Container>
       <Contact />
     </div>
   );

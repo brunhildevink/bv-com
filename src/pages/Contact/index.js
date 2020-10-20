@@ -11,7 +11,7 @@ function Contact() {
             <Container>
                 <Row className="contact-row">
                     <Col>
-                        <h2 className="intro-header">Contact</h2>
+                        <h3 className="intro-header">Contact</h3>
                     </Col>
                 </Row>
                 <Row className="contact-btn-row">

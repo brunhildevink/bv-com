@@ -10,62 +10,38 @@ function Skills() {
     const languages = [
         {
             title: "HTML/CSS",
-            text: "Advanced",
         },
         {
             title: "Javascript ES6",
-            text: "Advanced"
         },
         {
             title: "PHP",
-            text: "Medior"
-        },
-        {
-            title: "Python",
-            text: "Beginner"
-        },
-        {
-            title: "Node",
-            text: "Beginner"
-        },
-        {
-            title: "Java",
-            text: "Beginner"
         }
     ]
 
     const frameworks = [
         {
             title: "React",
-            text: "Advanced"
         },
         {
             title: "Vue",
-            text: "Medior"
         },
     ]
 
     const test = [
         {
             title: "Jest",
-            text: "Medior"
-        },
-        {
-            title: "Jasmine",
-            text: "Beginner"
-        },
+        }
     ]
 
     function renderCards(section) {
         return section.map(({title, text, highlight}, idx) => (
             <Col
                 sm={6}
-                lg={4}
             >
                 <Card
                     key={idx}
                     title={title}
-                    text={text}
                     highlight={highlight}
                 />
             </Col>
@@ -76,24 +52,24 @@ function Skills() {
         <section className="skills" id="skills">
             <Container>
 
-                <h2 className="intro-header">Skills</h2>
+                {/* <h2 className="intro-header">Skills</h2> */}
 
                 <div className="skill-section">
-                    <h3>Languages</h3>
+                    <h4>Languages</h4>
                     <Row className="skill-row">
                         { renderCards(languages) }
                     </Row>
                 </div>
 
                 <div className="skill-section">
-                    <h3>Frameworks</h3>
+                    <h4>Frameworks</h4>
                     <Row className="skill-row">
                         { renderCards(frameworks) }
                     </Row>
                 </div>
 
                 <div className="skill-section">
-                    <h3>Testing</h3>
+                    <h4>Testing</h4>
                     <Row className="skill-row">
                         { renderCards(test) }
                     </Row>
