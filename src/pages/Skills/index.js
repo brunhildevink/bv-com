@@ -26,6 +26,9 @@ function Skills() {
         {
             title: "Vue",
         },
+        {
+            title: "Next.js",
+        },
     ]
 
     const test = [
@@ -34,15 +37,15 @@ function Skills() {
         }
     ]
 
-    function renderCards(section) {
-        return section.map(({title, text, highlight}, idx) => (
+    const renderCards = section => {
+        return section.map(({title}, idx) => (
             <Col
                 sm={6}
+                lg={4}
             >
                 <Card
                     key={idx}
                     title={title}
-                    highlight={highlight}
                 />
             </Col>
         ))

@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.scss';
-import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
     return (
