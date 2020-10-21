@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.scss';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 // components
 import Button from '../../components/Button'
