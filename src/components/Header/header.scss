@@ -20,12 +20,58 @@
         }
     }
 
-    &-container {
-        margin-top: 48px;
+    .button-scroll-container {
+        position: absolute;
+        top: calc(100vh - 100px);
+        left: calc(50vw - 20px);
 
-        @media (min-width: 768px) and (min-height: 1020px) {
-            margin-top: 25vh;
+        .button-scroll {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #cc0e74;
+            width: 40px;
+            height: 60px;
+            border-radius: 20px;
+            cursor: pointer;
+        
+            .circle {
+                position: absolute;
+                top: 10px;
+                left: calc(50% - 4px);
+                width: 8px;
+                height: 8px;
+                display: block;
+                background: #cc0e74;
+                border-radius: 50%;
+                animation: scroll 2s ease-in-out infinite;
+            }
+    
+            &:hover {
+                .circle {
+                    animation: scroll-hover 2s infinite;
+                }
+            }
+        
+            @keyframes scroll {
+                0%      { opacity: 0; }
+                40%     { opacity: 1;}
+                90%     { transform: translateY(12px); opacity: 0; }
+                100%    { opacity: 0; }
+            }
+    
+            @keyframes scroll-hover {
+                0%      { transform: translateY(0); }
+                50%     { transform: translateY(12px);}
+                100%    { transform: translateY(0); }
+            }
         }
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+
     }
 
     .social-link svg {
@@ -51,27 +97,8 @@
         position: absolute;
         top: 0;
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         background: #fbf4f9;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-
-        @media (min-width: 768px) {
-            border-bottom-left-radius: 200px;
-            border-bottom-right-radius: 200px;
-        }
-
-        @media (max-height: 704px) {
-            height: 100vh;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-
-        @media (max-width: 767.98px) {
-            height: 100vh;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
     }
 
 }
