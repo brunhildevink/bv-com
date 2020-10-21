@@ -20,53 +20,56 @@
         }
     }
 
-    .button-scroll-container {
-        position: absolute;
-        top: calc(100vh - 100px);
-        left: calc(50vw - 20px);
-
-        .button-scroll {
-            position: relative;
-            display: block;
-            margin: 0 auto;
-            border: 2px solid #cc0e74;
-            width: 40px;
-            height: 60px;
-            border-radius: 20px;
-            cursor: pointer;
-        
-            .circle {
-                position: absolute;
-                top: 10px;
-                left: calc(50% - 4px);
-                width: 8px;
-                height: 8px;
+    @media (min-width: 768px) {
+        .button-scroll-container {
+            position: absolute;
+            top: calc(100vh - 100px);
+            left: calc(50vw - 20px);
+    
+            .button-scroll {
+                position: relative;
                 display: block;
-                background: #cc0e74;
-                border-radius: 50%;
-                animation: scroll 2s ease-in-out infinite;
-            }
-    
-            &:hover {
+                margin: 0 auto;
+                border: 2px solid #cc0e74;
+                width: 40px;
+                height: 60px;
+                border-radius: 20px;
+                cursor: pointer;
+            
                 .circle {
-                    animation: scroll-hover 2s infinite;
+                    position: absolute;
+                    top: 10px;
+                    left: calc(50% - 4px);
+                    width: 8px;
+                    height: 8px;
+                    display: block;
+                    background: #cc0e74;
+                    border-radius: 50%;
+                    animation: scroll 2s ease-in-out infinite;
                 }
-            }
         
-            @keyframes scroll {
-                0%      { opacity: 0; }
-                40%     { opacity: 1;}
-                90%     { transform: translateY(12px); opacity: 0; }
-                100%    { opacity: 0; }
-            }
-    
-            @keyframes scroll-hover {
-                0%      { transform: translateY(0); }
-                50%     { transform: translateY(12px);}
-                100%    { transform: translateY(0); }
+                &:hover {
+                    .circle {
+                        animation: scroll-hover 2s infinite;
+                    }
+                }
+            
+                @keyframes scroll {
+                    0%      { opacity: 0; }
+                    40%     { opacity: 1;}
+                    90%     { transform: translateY(12px); opacity: 0; }
+                    100%    { opacity: 0; }
+                }
+        
+                @keyframes scroll-hover {
+                    0%      { transform: translateY(0); }
+                    50%     { transform: translateY(12px);}
+                    100%    { transform: translateY(0); }
+                }
             }
         }
     }
+
 
     &-container {
         display: flex;
