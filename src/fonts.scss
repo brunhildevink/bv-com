@@ -1,19 +1,11 @@
-@font-face {
-    font-family: 'Playfair';
-    src: local('Playfair'), url(/fonts/playfair.tff) format('tff');
-}
-
-@font-face {
-    font-family: 'merriweather';
-    src: local('merriweather'), url(/fonts/merriweather.tff) format('tff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 h1, h2, h3, h4, h5, h6, p, a {
     color: #393b44;
 }
 
 .intro-header {
-    font-family: 'merriweather', helvetica, sans-serif normal;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: -.05em;
     margin-bottom: .5em;
 }
