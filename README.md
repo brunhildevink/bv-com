@@ -1,4 +1,4 @@
-#@ View the project here: https://brunhildevink.github.io/bv-com/
+## View the project here: https://brunhildevink.github.io/bv-com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
