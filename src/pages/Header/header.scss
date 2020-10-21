@@ -20,7 +20,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (min-height: 667px) {
         .button-scroll-container {
             position: absolute;
             top: calc(100vh - 100px);
