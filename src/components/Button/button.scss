@@ -12,6 +12,7 @@
     font-size: 24px;
     padding: 10px 24px;
     width: 100%;
+    border: 2px solid #cc0e74;
 
     @media (min-width: 768px) {
         max-width: 400px;
@@ -25,8 +26,6 @@
     }
 
     &.secondary {
-        // border: 2px solid #cc0e74;
-        box-shadow: 0 0 0 2px #cc0e74;
         color: #cc0e74;
 
         &:after {
@@ -78,10 +77,6 @@
         @media (min-width: 768px) {
             max-width: 124px;
         }
-    }
-
-    &:hover {
-        text-decoration: none;
     }
 }
 
