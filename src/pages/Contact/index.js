@@ -7,7 +7,7 @@ import Button from '../../components/Button'
 
 function Contact() {
     return (
-        <footer className="contact" id="contact">
+        <section className="contact" id="contact">
             <Row>
                 <Col>
                     <h4 className="intro-header">Reach out</h4>
@@ -27,7 +27,7 @@ function Contact() {
                     </a>
                 </Col>
             </Row>
-        </footer>
+        </section>
     );
 }
 

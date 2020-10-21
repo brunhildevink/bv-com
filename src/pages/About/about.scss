@@ -16,7 +16,7 @@
     &:before {
         content: '';
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         left: -300px;
         display: block;
         width: 100%;
