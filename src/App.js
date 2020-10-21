@@ -3,9 +3,8 @@ import './App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 
 // Pages
-import Header from './components/Header'
+import Header from './pages/Header'
 import About from './pages/About'
-import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 
 function App() {
