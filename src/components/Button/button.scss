@@ -5,7 +5,6 @@
     overflow: hidden;
     margin: 12px 0;
     z-index: 1;
-    height: 60px;
     display: inline-block;
     text-align: center;
     cursor: pointer;
@@ -26,7 +25,8 @@
     }
 
     &.secondary {
-        border: 2px solid #cc0e74;
+        // border: 2px solid #cc0e74;
+        box-shadow: 0 0 0 2px #cc0e74;
         color: #cc0e74;
 
         &:after {
@@ -72,9 +72,8 @@
 
     &.small {
         font-size: 18px;
-        height: 40px;
         min-width: max-content;
-        padding: 4px 8px;
+        padding: 8px;
 
         @media (min-width: 768px) {
             max-width: 124px;
